@@ -1,0 +1,38 @@
+<div className="App">
+  <h1>THE GALLERY REACT APP</h1>
+
+  <div>
+    <p>
+      would you like to see some Paintings from you favorite Artist
+      then...
+    </p>
+    <label>
+      Select an Artist:
+      <select ng-model="selectedItem" ng-options="item as item.name for item in items"></select>
+   <pre>{{selectedArtist | json}}</pre>
+      <button>Search</button>
+    </label>
+  </div>
+  <div>
+    <h1>Pics By Artist</h1>
+    <div>
+      <img ng-src="{{picByArtist}}" class="img-responsive " />
+        {{fname}}
+        <p> {{ title }} </p>
+        <p> {{ artistName }} </p>
+        <p> {{ url }} </p>
+        <p> {{ completitionYear }} </p>        
+    </div>
+  </div>>  
+  <div>
+    <h1>Most Viewed Paintings</h1>
+    <div>
+      <img ng-src="{{pic}}" class="img-responsive " />
+        {{fname}}
+        <p> {{ title }} </p>
+        <p> {{ artistName }} </p>
+        <p> {{ url }} </p>
+        <p> {{ completitionYear }} </p>        
+    </div>
+  </div>
+</div>
